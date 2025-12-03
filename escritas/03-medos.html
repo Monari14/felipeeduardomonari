@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#121212" />
+    <title>Medos - Felipe Eduardo Monari</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon">
+</head>
+<body>
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <center>
+            <a href="../index.html"><img src="../assinatura.png" alt="Minha Assinatura"></a>
+            </center>
+            <ul>
+                <li class="roxo"><a href="01-vim-do-pouco.html">Vim do Pouco</a></li>
+                <li class="roxo"><a href="02-objetivos.html">Objetivos</a></li>
+                <li class="roxo"><a href="03-medos.html">Medos</a></li>
+                <li class="roxo"><a href="04-facufora.html">Façúfora</a></li>
+                <li class="roxo"><a href="05-resposta.html">Resposta</a></li>
+                <li class="roxo"><a href="06-saltos.html">Saltos</a></li>
+                <li class="roxo"><a href="07-o-comeco-do-fim.html">O Começo do fim</a></li>
+                <li class="roxo"><a href="08-cobras.html">Cobras</a></li>
+                <li class="roxo"><a href="09-folhas.html">Folhas</a></li>
+                <li class="roxo"><a href="10-redundancia.html">Redundância</a></li>
+                
+                <li class="azul"><a href="11-qwe.html">!?!</a></li>
+                <li class="azul"><a href="12-tentativa.html">Tentativa</a></li>
+                <li class="azul"><a href="13-terago.html">Terago</a></li>
+                <li class="azul"><a href="14-sera-que-valeu-a-pena.html">Será que valeu a pena?</a></li>
+                <li class="azul"><a href="15-mar-e-eu.html">Mar e eu...</a></li>
+                <li class="azul"><a href="16-ondas-do-mar-e-eu.html">Ondas do mar e eu</a></li>
+                <li class="azul"><a href="17-tempo-de-duvida.html">Tempo de dúvida</a></li>
+                <li class="azul"><a href="18-assim-e-voce.html">Assim é você</a></li>
+
+                <li class="amarelo"><a href="19-governantes-podres.html">Governantes podres</a></li>
+                <li class="amarelo"><a href="20-so-faco-o-que-eu-quero.html">Só faço o que eu quero!</a></li>
+                 
+                <li class="red-claro"><a href="21-raizes.html">Raízes</a></li>
+                <li class="red-claro"><a href="22-em-queda-livre.html">Em queda livre</a></li>
+
+                <li class="red"><a href="23-falta.html">Falta</a></li>
+                <li class="red"><a href="24-carta-para-meu-verdadeiro-pai.html">Carta para meu verdadeiro pai</a></li>
+                <li class="red"><a href="25-pensamentos.html">Pensamentos</a></li>
+            </ul>
+        </aside>
+
+        <main class="book-container">
+            <div class="page active">
+                    <h2>Medos - Felipe Eduardo Monari - 10/05/2025</h2>
+
+                    <p>Ai por favor..<br>
+                        Só queria dizer que…</p>
+
+                    <p>Muitos sentem medo de acabar<br>
+                        Enquanto…<br>
+                        Eu tenho medo de não começar<br>
+                        De não conquista<br>
+                        Ajuda…</p>
+
+                    <p>Mano na moral<br>
+                        Fechei um brik daora esses dias<br>
+                        Um amigo me disse<br>
+                        Eu na hora perguntei…<br>
+                        Que brik?<br>
+                        Ele com lágrimas soltou que ia ficar rico e pa<br>
+                        Onde perguntei novamente…<br>
+                        Mano você tem uma família?<br>
+                        Sim<br>
+                        Sua coroa tá bem?<br>
+                        Ta<br>
+                        Tá com uma mina responsa?<br>
+                        To<br>
+                        Então pq tu chora dizendo que vai ficar rico se já é tlgd…<br>
+                        Muda tua rota<br>
+                        Tu não quer ficar rico tu quer parecer um cara sem medos, angústias, desejos…<br>
+                        Tu quer pode da pra tua filha o que tu não teve<br>
+                        E talvez…<br>
+                        Esse pensamento te faz rico<br>
+                        Pensamento esse que é gerado por…<br>
+                        Medos<br>
+                        Medos do passado que você vive no presente torcendo pra não ter mais no futuro<br>
+                        Entende?...</p>
+
+                    <p>Bom…<br>
+                        Quando me deparei<br>
+                        Esse amigo era eu mesmo<br>
+                        Onde ESSES medos me fizeram ter coragem<br>
+                        Me fizeram começar<br>
+                        E não ter mais medo de acabar<br>
+                        Continuar eu diria<br>
+                        Fazendo minha prece TODOS os dias<br>
+                        Pedindo que UM dia…<br>
+                        Eu deixe esse medo e…<br>
+                        Me torne a coragem da família.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Felipe Eduardo Monari. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidebar = document.getElementById('sidebar');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        });
+
+        // Fechar o menu quando clicar em um link
+        const sidebarLinks = sidebar.querySelectorAll('a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                sidebar.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
