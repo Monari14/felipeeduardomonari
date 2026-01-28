@@ -108,6 +108,14 @@ img{
     border-left: 4px solid transparent;
 }
 
+.sidebar li.verde {
+    border-left-color: #b2f2bb;
+}
+
+.sidebar li.laranja {
+    border-left-color: #ffd8a8;
+}
+
 .sidebar li.roxo {
     border-left-color: #d0bfff;
 }
@@ -138,6 +146,71 @@ img{
     transform: translateX(3px);
 }
 
+/* === DETAILS/SUMMARY STYLING === */
+details {
+    margin: 0.5rem 0;
+}
+
+summary {
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    user-select: none;
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+    color: white;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '';
+    position: absolute;
+    left: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid currentColor;
+}
+
+details[open] > summary::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+summary.verde {
+    border-left: 4px solid #b2f2bb;
+}
+
+summary.laranja {
+    border-left: 4px solid #ffd8a8;
+}
+
+summary.verde:hover {
+    background-color: rgba(178, 242, 187, 0.1);
+    transform: translateX(3px);
+}
+
+summary.laranja:hover {
+    background-color: rgba(255, 216, 168, 0.1);
+    transform: translateX(3px);
+}
+
+.verde:hover {
+    background-color: #b2f2bb;
+}
+
+.laranja:hover {
+    background-color: #ffd8a8;
+}
 .roxo:hover {
     color: #121212;
     background-color: #d0bfff;
