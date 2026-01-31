@@ -116,6 +116,10 @@ img{
     border-left-color: #ffd8a8;
 }
 
+.sidebar li.verdeT {
+    border-left-color: #b2f2bb;
+}
+
 .sidebar li.roxo {
     border-left-color: #d0bfff;
 }
@@ -205,6 +209,11 @@ summary.laranja:hover {
 }
 
 .verde:hover {
+    background-color: #b2f2bb;
+}
+
+.verdeT:hover {
+    color: #121212;
     background-color: #b2f2bb;
 }
 
